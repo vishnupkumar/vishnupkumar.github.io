@@ -31,12 +31,12 @@
 		<p class="week">WEEK 1</p>
 		<p class="date">April 10 2021</p>
 		<p class="head1">ESP 32</p><br />
-		<p class="content1">ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. The ESP32 series employs a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations and includes built-in antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems, a Shanghai-based Chinese company, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
+		<p class="content1">ESP32 is a series of low-cost, low-power system on a chip development board with integrated Wi-Fi and dual-mode Bluetooth. The ESP32 series employs a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations and includes built-in antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems, a Shanghai-based Chinese company, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
 		<p class="head2">1. Circuit Diagram</p><br />
-		<p class="content2">The first task was to draw the circuit according to the specifications. The motor is programmed using ESP32. ESP32 is powered by regulated voltage of 3.3V. The transistor used in 2N2222 . The first draft of the circuit had some mistakes. Afterwards the circuit was modified by Amith sir. The final version of ciruit diagram is as shown below.</p>
+		<p class="content2">The first task was to draw the circuit according to the specifications. The motor is controlled by the concept of transistor as a switch. The base of the transistor 2N2222 was connected to the ESP32. ESP32 is powered by regulated voltage of 3.3V. The first draft of the circuit had some mistakes. Afterwards the circuit was modified by Amith sir. The final version of ciruit diagram is as shown below.</p>
 		<img class="inimage" src="images/circuit.png" />
 		<p class="head2">2. Circuit Design on PCB</p>
-		<p class="content2">The next task was to assemble the circuit on PCB according to the circuit diagram . A battery of 7.4 Voltage ws connected to regulator to obtain 3.3 V and 5.1 V. The 5.1 V to diode IN007 ans 3.3 V to the ESP32 .The motor was programmed by ESP 32 and using transistor. The different cricuits were done for an experimentation/study purpose.The esp32 controlllig process was initially tried with an on/off sign ,then with an LED and then with motor control and Blynk app interface</p>
+		<p class="content2">The next task was to assemble the circuit on PCB according to the circuit diagram . A battery of 7.4V was connected to regulator module to obtain 3.3 V and 5.1 V. The 5.1 V to diode 1N4007 and 3.3 V to the ESP32 . The different cricuits were done for an experimentation/study purpose.The esp32 controllling process was initially tried with an on/off sign ,then with an LED and then with motor control and Blynk app interface</p>
 		<p class="code">	#define BLYNK_PRINT Serial<br />
 				#include <br />
 				#include <br />
@@ -75,7 +75,7 @@
 	</div>
 </div>
 <footer>
-		<h3>ALERT SYSYTEM - NISH &copy; Vaishnavy</h3>
+		<h3>ALERT SYSYTEM - NISH &copy; VishnuPKumar</h3>
 </footer>
 
 </body>
