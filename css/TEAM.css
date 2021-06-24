@@ -1,0 +1,48 @@
+
+.headm{
+	padding-left:7.5%;
+	padding-right:0px;
+	padding-bottom:3.125%;
+	padding-top:1.375%;
+	font-size:31px;
+	margin:0px;
+	margin-top:2.5%;
+}
+.he1{
+	
+	padding-left:340px;
+	padding-right:0px;
+	padding-bottom:0.0625%;
+	padding-top:0.625%;
+	font-size:25px;
+	margin-top:2px;
+}
+.se1{
+	margin-left:340px;
+	padding-right:0px;
+	padding-bottom:2px;
+	padding-top:0px;
+	font-size:19px;
+	margin-top:0px;
+}
+.he2{
+	margin-right:34.1%;
+	padding-bottom:1px;
+	padding-top:10px;
+	font-size:25px;
+	margin-top:2px;
+}
+.se2{
+	margin-right:600px;
+	padding-bottom:2px;
+	padding-top:0px;
+	font-size:19px;
+	margin-top:0px;
+}
+table{
+	text-align:left;
+	margin:0px;
+	padding:0px;
+	width:110%;
+}
+
