@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alert System Timeline - NISH</title>
+	<link rel="stylesheet" type="text/css" href="css/NAVBAR.css">
+	<link rel="stylesheet" type="text/css" href="css/TIMELINE.css">
+	<link rel="stylesheet" type="text/css" href="css/TLBODY.css">
+	<link rel="stylesheet" type="text/css" href="css/FOOTER.css">
+</head>
+<body>
+	<div class="nav-bar">
+		<ul class="heading">
+		
+			<li class="head"><a href="index.html">ALERT SYSTEM</a></li>
+			<li class="inline-last"><a href="TEAM.html" class="side">Team</a></li>
+			<li class="inline"><a href="TIMELINE1.html" class="side">Timeline</a></li>
+			<li class="inline"><a href="index.html" class="side">About</a></li>
+		</ul>
+	</div>
+<div class="content">
+	<div >
+	<ul >
+		<li class="timeline1"><a href="TIMELINE1.html"><img class="timeline1"src="images/globel.png" /><br />WEEK 1</a></li>
+		<li class="timeline"><a href="TIMELINE2.html"><img class="timeline" src="images/globe.png" /><br />WEEK 2</a></li>
+		<li class="timeline"><a href="TIMELINE3.html"><img class="timeline" src="images/globe.png" /><br />WEEK 3</a></li>
+		<li class="timeline"><a href="TIMELINE4.html"><img class="timeline" src="images/globe.png" /><br />WEEK 4</a></li>
+	</ul>
+	</div>
+	
+	<div class="container" >
+		<p class="week">WEEK 1</p>
+		<p class="date">April 10 2021</p>
+		<p class="head1">ESP 32</p><br />
+		<p class="content1">ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth. The ESP32 series employs a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations and includes built-in antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems, a Shanghai-based Chinese company, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
+		<p class="head2">1. Circuit Diagram</p><br />
+		<p class="content2">The first task was to draw the circuit according to the specifications. The motor is programmed using ESP32. ESP32 is powered by regulated voltage of 3.3V. The transistor used in 2N2222 . The first draft of the circuit had some mistakes. Afterwards the circuit was modified by Amith sir. The final version of ciruit diagram is as shown below.</p>
+		<img class="inimage" src="images/circuit.png" />
+		<p class="head2">2. Circuit Design on PCB</p>
+		<p class="content2">The next task was to assemble the circuit on PCB according to the circuit diagram . A battery of 7.4 Voltage ws connected to regulator to obtain 3.3 V and 5.1 V. The 5.1 V to diode IN007 ans 3.3 V to the ESP32 .The motor was programmed by ESP 32 and using transistor. The different cricuits were done for an experimentation/study purpose.The esp32 controlllig process was initially tried with an on/off sign ,then with an LED and then with motor control and Blynk app interface</p>
+		<p class="code">	#define BLYNK_PRINT Serial<br />
+				#include <br />
+				#include <br />
+				#include <br />
+				int pin = 2;<br />
+				char auth[] = "pGw0NoqVl6aWtT56tG1LPZdYDMQUAHPS";       // You should get Auth Token in the Blynk App.<br />
+				char ssid[] = "realme 3 Pro";                    // Your Wi-Fi Credentials<br />
+				char pass[] = "12345678";<br />
+				
+				
+				void setup() {  <br />
+				  pinMode(pin, OUTPUT);<br />
+				  pinMode(pin, HIGH);<br />
+				  Serial.begin(115200);<br />
+				  delay(10);<br />
+				  Serial.print("Connecting to ");<br />
+				  Serial.println(ssid);<br />
+				  WiFi.begin(ssid, pass);<br />
+				  int wifi_ctr = 0;<br />
+				  while (WiFi.status() != WL_CONNECTED) {<br />
+				  delay(500);<br />
+				  Serial.print(".");<br />
+				  }<br />
+				  Serial.println("WiFi connected");  <br />
+				  Blynk.begin(auth, ssid, pass);<br />
+				}<br />
+				void loop(){<br />
+					Blynk.run();<br />
+				}<br />
+		</code>
+		<p class="head2">4. Testing with Blynk application</p>
+		<p class="content2">The setup was tested using an interface created on Blynk. The application activates the alert device at a preset time for a preset duration .Using the arduino IDE the code to enable control over the circuit using ESP32 and the blynk app has been used to control the device using a mobile application.</p>
+		<img class="inimage1" src="images/blynk.png" />
+		<br />
+		<img class="inimage2" src="images/images.jpg" />
+	</div>
+</div>
+<footer>
+		<h3>ALERT SYSYTEM - NISH &copy; Vaishnavy</h3>
+</footer>
+
+</body>
+</html>
