@@ -30,7 +30,7 @@
 	<div class="container" >
 		<p class="week">WEEK 1</p>
 		<p class="date">April 10 2021</p>
-		<p class="head1">ESP 32</p><br />
+		<p class="head1">ESP32 Development Board</p><br />
 		<p class="content1">ESP32 is a series of low-cost, low-power system on a chip development board with integrated Wi-Fi and dual-mode Bluetooth. The ESP32 series employs a Tensilica Xtensa LX6 microprocessor in both dual-core and single-core variations and includes built-in antenna switches, RF balun, power amplifier, low-noise receive amplifier, filters, and power-management modules. ESP32 is created and developed by Espressif Systems, a Shanghai-based Chinese company, and is manufactured by TSMC using their 40 nm process. It is a successor to the ESP8266 microcontroller.</p>
 		<p class="head2">1. Circuit Diagram</p><br />
 		<p class="content2">The first task was to draw the circuit according to the specifications. The motor is controlled by the concept of transistor as a switch. The base of the transistor 2N2222 was connected to the ESP32. ESP32 is powered by regulated voltage of 3.3V. The first draft of the circuit had some mistakes. Afterwards the circuit was modified by Amith sir. The final version of ciruit diagram is as shown below.</p>
@@ -43,8 +43,8 @@
 				#include <br />
 				int pin = 2;<br />
 				char auth[] = "pGw0NoqVl6aWtT56tG1LPZdYDMQUAHPS";       // You should get Auth Token in the Blynk App.<br />
-				char ssid[] = "realme 3 Pro";                    // Your Wi-Fi Credentials<br />
-				char pass[] = "12345678";<br />
+				char ssid[] = "SSID";                    // Your Wi-Fi Credentials<br />
+				char pass[] = "PASSWORD";<br />
 				
 				
 				void setup() {  <br />
