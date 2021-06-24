@@ -1,0 +1,24 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+	text-align:center;
+	padding:5px ;
+	height:25px;
+	border-top:2.5px solid #D3D3D3;
+}
+
+h3{
+	font-size:14px;
+	margin-bottom:2px;
+	padding-bottom:0px;
+	margin-top:1px;
+}
+h4{
+	font-size:12px;
+	margin-top:0px;
+	padding-top:0px;
+}
