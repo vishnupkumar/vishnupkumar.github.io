@@ -1,0 +1,40 @@
+*{
+	font-family:Cambria,Geneva,Calibri;	
+}
+
+.timeline{
+	display:inline-block;
+	padding-top:0.45%;
+	padding-bottom:0.3%;
+	padding-left:1.25%;
+	padding-right:1.25%;
+	font-size:16px;
+	text-align:center;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.18em;
+}
+img.timeline{
+	width:52px;
+	height:52px;
+	margin:auto;
+	padding-left:1.25%;
+}
+.timeline1{
+	display:inline-block;
+	padding-top:0.45%;
+	padding-bottom:0.3%;
+	padding-left:28.95%;
+	padding-right:1.25%;
+	font-size:16px;
+	text-align:center;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.18em;
+}
+img.timeline1{
+	width:52px;
+	height:52px;
+	margin:auto;
+	padding-left:1.25%;
+}
